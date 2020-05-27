@@ -1,0 +1,10 @@
+apply plugin: 'base'
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+wrapper {
+    gradleVersion = '6.3'
+    description "Regenerates the Gradle Wrapper files"
+}
+
