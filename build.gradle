@@ -8,3 +8,6 @@ wrapper {
     description "Regenerates the Gradle Wrapper files"
 }
 
+compileJava {
+    options.compilerArgs += ['--enable-preview']
+}
