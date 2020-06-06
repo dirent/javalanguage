@@ -1,4 +1,5 @@
 apply plugin: 'base'
+apply plugin: 'application'
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
@@ -8,6 +9,13 @@ wrapper {
     description "Regenerates the Gradle Wrapper files"
 }
 
+sourceCompatibility = 14
 compileJava {
     options.compilerArgs += ['--enable-preview']
 }
+
+run {
+    jvmArgs(['--enable-preview'])
+}
+
+mainClassName = 'Java14'
