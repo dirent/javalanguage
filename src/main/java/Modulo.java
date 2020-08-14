@@ -26,7 +26,8 @@ public class Modulo {
         System.out.println( "22 / 5 =  " + (22/4) );
         System.out.println( "22 % 5 =  " + modulo(22,4) );
         System.out.println( "-5 % 3 =  " + modulo(-5,3) );
-        System.out.println( "ggT(1020,768) = " + ggT(1020,768) );
-        System.out.println( "ggT(768,1020) = " + ggT(768,1020) );
+        System.out.println( "ggT(1020,768)  = " + ggT(1020,768) );
+        System.out.println( "ggT(768,1020)  = " + ggT(768,1020) );
+        System.out.println( "ggT(3619,1771) = " + ggT(3619,1771) );
     }
 }
