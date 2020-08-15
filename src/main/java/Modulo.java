@@ -21,17 +21,16 @@ public class Modulo {
      * r = p*a + q*b
      */
     public static int[] ggT( int a, int b ) {
+        if( b > a ) return ggT(b,a);
         if( b == 0  ||  a == b ) {
             return new int[] {a, 1, 0};
         }
-        if( a > b ) {
-            int[] ggT = ggT(b, modulo(a, b));
-            int r = ggT[0];
-            int p = ggT[2];
-            int q = ggT[1] - (a/b) * ggT[2];
-            return new int[] {r, p, q};
-        }
-        return ggT(b,a);
+
+        int[] ggT = ggT(b, modulo(a, b));
+        int r = ggT[0];
+        int p = ggT[2];
+        int q = ggT[1] - (a/b) * ggT[2];
+        return new int[] {r, p, q};
     }
 
     public static void main(String[] args){
