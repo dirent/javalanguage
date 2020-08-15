@@ -46,6 +46,8 @@ public class Modulo {
 
         System.out.println( "\nExtended Euclidean algorithm" );
         int[] ggT = ggT( 125, 55 );
-        System.out.println( "ggT(125,25) = " + ggT[0] + " = " + ggT[1] + "*125" + ggT[2] + "*55" );
+        System.out.println( "ggT(125,25)   = " + ggT[0] + " = " + ggT[1] + "*125 + " + ggT[2] + "*55" );
+        ggT = ggT( 1020, 768 );
+        System.out.println( "ggT(1020,768) = " + ggT[0] + " = " + ggT[1] + "*1020 + " + ggT[2] + "*768" );
     }
 }
